@@ -257,6 +257,11 @@ header nav {
 @media screen and (max-width:480px) {
     header nav ul {
         padding: 0;
+        margin-bottom: 0;
+    }
+    header nav ul li:not(:first-child) {
+        padding-top: 7px;
+        border-top: 1px rgb(255, 255, 255) solid;
     }
     header nav ul li a span {
         text-transform: uppercase;
@@ -1920,10 +1925,10 @@ footer .getintouch p {
         background: #37dbd3;
         position: absolute;
         width: 100%;
-        top: 69px;
+        top: 80px;
         left: 0;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
         line-height: 30px;
     }
     .slider-content h1 {
