@@ -239,7 +239,7 @@ header {
 
 header.fixed {
     position: fixed;
-    background: #000;
+    background: #37dbd3;
 }
 
 header .logo {
@@ -252,6 +252,16 @@ header .logo img {
 
 header nav {
     float: right;
+}
+
+@media screen and (max-width:480px) {
+    header nav ul {
+        padding: 0;
+    }
+    header nav ul li a span {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
 }
 
 header nav ul li {
@@ -1899,7 +1909,7 @@ footer .getintouch p {
     }
     header.open>nav {
         text-align: center;
-        background: #000;
+        background: #37dbd3;
         position: absolute;
         width: 100%;
         top: 69px;
