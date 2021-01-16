@@ -119,7 +119,7 @@ button {
 
 #preloader .left-side,
 #preloader .right-side {
-    background: #111;
+    background: rgb(255, 255, 255);
     height: 100%;
     position: absolute;
     width: 50%;
@@ -252,14 +252,33 @@ header .logo img {
 
 header nav {
     float: right;
+padding: 0;
 }
 
 @media screen and (max-width:480px) {
+    header{
+        background:#37dbd3 ;
+        letter-spacing: 2px;
+    }
+    header .menu{
+   
+        padding-left: 10px;
+        display: inline-flex;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    
+    }
+    header .bord a{
+    
+      padding-right: 10px;
+        border-right: 1px rgb(255, 255, 255) solid;
+    }
+  
     header nav ul {
         padding: 0;
         margin-bottom: 0;
     }
-    header nav ul li:nth-of-type(-n) {
+    header nav ul li:nth-child(n+4) {
         padding-top: 7px;
         border-top: 1px rgb(255, 255, 255) solid;
     }
