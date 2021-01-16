@@ -297,7 +297,35 @@ padding: 0;
         padding-right: 10px;
     }
 }
-
+@media screen and (max-width:1040px){
+    header{
+        background:#37dbd3 ;
+        letter-spacing: 2px;
+    }
+    header .menu{
+   
+        padding-left: 10px;
+        display: inline-flex;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    
+    }
+    header .bord a{
+    
+      padding-right: 10px;
+        border-right: 1px rgb(255, 255, 255) solid;
+    }
+  
+    header nav ul {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    header nav ul li:nth-child(n+4) {
+        padding-top: 7px;
+        border-top: 1px rgb(255, 255, 255) solid;
+    }
+ 
+}
 header nav ul li {
     float: left;
     margin-left: 30px;
@@ -610,7 +638,7 @@ header nav ul li a:focus {
 
 .slider-content h1 {
     color: #fff;
-    font-size: 120px;
+    font-size: 90px;
     font-weight: 900;
     line-height: 130px;
     opacity: 0;
@@ -978,7 +1006,13 @@ section {
 .testimonials .item span {
     font-size: 13px;
 }
-
+@media screen and (max-width:1040px) {
+    .testimonials .item .title {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1px;
+    }
+}
 .testimonials .item p {
     font-size: 13px;
     line-height: 22px;
@@ -986,7 +1020,7 @@ section {
 
 .testimonials .outitem {
     background: #efefef;
-    padding: 40px;
+    padding: 20px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -1961,7 +1995,7 @@ footer .getintouch p {
         line-height: 30px;
     }
     .slider-content h1 {
-        font-size: 100px;
+        font-size: 70px;
         line-height: 110px;
     }
     .section-title .title {
@@ -1994,7 +2028,7 @@ footer .getintouch p {
         padding-left: 0 !important;
     }
     .slider-content h1 {
-        font-size: 80px;
+        font-size: 70px;
         line-height: 90px;
     }
     .about .text {
