@@ -1256,7 +1256,7 @@ section {
     visibility: hidden;
     opacity: 0;
     border-radius: 8px;
-    webkit-border-radius: 8px;
+    
 }
 
 .grid-item:hover .portfolio-item:after {
@@ -1861,7 +1861,7 @@ footer .getintouch p {
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, 80px, 0);
-        transform: translate3d(0, 80px%, 0);
+        transform: translate3d(0, 80px, 0);
     }
     to {
         opacity: 1;
