@@ -933,16 +933,24 @@ section {
     -moz-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
-}
 
-.service:hover {
+
+}
+.icon{
+  fill:#37dbd3;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.service:hover,
+.icon:hover,
+.service:focus,
+.icon:focus {
     color: rgb(0, 0, 0);
+    fill:rgb(255, 255, 255)
 }
 
-.service i:before {
-    font-size: 60px;
-    margin-left: 0;
-}
+
 
 .service .second-title {
     margin-top: 30px;
@@ -976,13 +984,10 @@ section {
 }
 
 .testimonials .item figure img {
-    max-width: 90px;
+    max-width: 200px;
     margin: 0 auto;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    
+  
 }
 
 .testimonials .item .name {
@@ -1019,7 +1024,7 @@ section {
 }
 
 .testimonials .outitem {
-    background: #efefef;
+    background: none;
     padding: 20px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -2166,4 +2171,18 @@ footer .getintouch p {
         font-size: 40px;
         line-height: 50px;
     }
+}
+
+.facebook::before{
+    content: url(../img/1.svg);
+    width: 50px;
+   height: 50px;
+    fill: rgb(255, 255, 255);
+}
+
+.insta::before{
+    content: url(../img/2.svg);
+    width: 50px;
+   
+    fill: rgb(255, 255, 255);
 }
