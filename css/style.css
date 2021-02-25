@@ -264,23 +264,20 @@ padding: 0;
     header .menu{
    
    color: #fff;
-        padding-left: 10px;
+      
         display: inline-flex;
         padding-top: 20px;
         padding-bottom: 10px;
     
     }
-    header .bord a{
-    
-      padding-right: 10px;
-        border-right: 1px rgb(255, 255, 255) solid;
-    }
+  
+
   
     header nav ol {
         padding: 0;
         margin-bottom: 0;
     }
-    header nav ol li:nth-child(n+4) {
+    header nav ol li:nth-child(n+2) {
         padding-top: 7px;
         border-top: 1px rgb(255, 255, 255) solid;
     }
@@ -323,7 +320,7 @@ padding: 0;
         padding: 0;
         margin-bottom: 0;
     }
-    header nav ol li:nth-child(n+4) {
+    header nav ol li:nth-child(n+2) {
         padding-top: 7px;
         border-top: 1px rgb(255, 255, 255) solid;
     }
