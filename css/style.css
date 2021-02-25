@@ -255,6 +255,7 @@ header nav {
 padding: 0;
 }
 
+
 @media screen and (max-width:480px) {
     header{
         background:#37dbd3 ;
@@ -262,6 +263,7 @@ padding: 0;
     }
     header .menu{
    
+   color: #fff;
         padding-left: 10px;
         display: inline-flex;
         padding-top: 20px;
@@ -274,15 +276,15 @@ padding: 0;
         border-right: 1px rgb(255, 255, 255) solid;
     }
   
-    header nav ul {
+    header nav ol {
         padding: 0;
         margin-bottom: 0;
     }
-    header nav ul li:nth-child(n+4) {
+    header nav ol li:nth-child(n+4) {
         padding-top: 7px;
         border-top: 1px rgb(255, 255, 255) solid;
     }
-    header nav ul li a span {
+    header nav ol li a span {
         text-transform: uppercase;
         font-weight: 700;
     }
@@ -302,10 +304,11 @@ padding: 0;
         background:#37dbd3 ;
         letter-spacing: 2px;
     }
-    header .menu{
-   
+    header .menu a{
+   color: #fff;
+
         padding-left: 10px;
-        display: inline-flex;
+        
         padding-top: 20px;
         padding-bottom: 10px;
     
@@ -316,23 +319,23 @@ padding: 0;
         border-right: 1px rgb(255, 255, 255) solid;
     }
   
-    header nav ul {
+    header nav ol {
         padding: 0;
         margin-bottom: 0;
     }
-    header nav ul li:nth-child(n+4) {
+    header nav ol li:nth-child(n+4) {
         padding-top: 7px;
         border-top: 1px rgb(255, 255, 255) solid;
     }
  
 }
-header nav ul li {
+header nav ol li {
     float: left;
     margin-left: 30px;
     list-style: none;
-}
+}ol
 
-header nav ul li a span:before {
+header nav ol li a span:before {
     position: absolute;
     top: 100%;
     width: 100%;
@@ -340,7 +343,7 @@ header nav ul li a span:before {
     content: attr(data-hover);
 }
 
-header nav ul li a span {
+header nav ol li a span {
     position: relative;
     display: block;
     -webkit-transition: -webkit-transform 0.2s;
@@ -348,13 +351,13 @@ header nav ul li a span {
     transform-origin: 100% 0%;
 }
 
-header nav ul li:hover a span {
+header nav ol li:hover a span {
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     transform-origin: 0% 0%;
 }
 
-header nav ul li a {
+header nav ol li a {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -362,7 +365,7 @@ header nav ul li a {
     display: inline-block;
 }
 
-header nav ul li a:hover {
+header nav ol li a:hover {
     color: #fff;
 }
 
@@ -371,7 +374,7 @@ header .active {
     opacity: .5;
 }
 
-header nav ul li a:focus {
+header nav ol li a:focus {
     color: #fff;
 }
 
@@ -1064,27 +1067,27 @@ section {
     font-weight: 600 !important;
 }
 
-.portfolio_filter ul {
+.portfolio_filter ol {
     float: right;
 }
 
-.align-left .portfolio_filter ul {
+.align-left .portfolio_filter ol {
     float: left;
 }
 
-.portfolio_filter ul li {
+.portfolio_filter ol li {
     list-style: none;
     float: left;
 }
 
-.portfolio_filter ul li a {
+.portfolio_filter ol li a {
     font-size: 15px;
     color: #000;
     font-weight: 400;
     margin-right: 30px;
 }
 
-.portfolio_filter ul li:last-child a {
+.portfolio_filter ol li:last-child a {
     margin-right: 0;
 }
 
@@ -1823,7 +1826,7 @@ footer .getintouch p {
 .dark .anews .title,
 .dark textarea::placeholder,
 .dark .form-inp::placeholder,
-.dark .portfolio_filter ul li a {
+.dark .portfolio_filter ol li a {
     color: #fff;
 }
 
@@ -1984,7 +1987,7 @@ footer .getintouch p {
         -ms-transition: all ease 0.3s;
         -o-transition: all ease 0.3s;
     }
-    header nav ul li {
+    header nav ol li {
         float: none;
         margin: 0;
     }
