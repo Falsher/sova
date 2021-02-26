@@ -266,9 +266,14 @@ padding: 0;
    color: #fff;
       
         display: inline-flex;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        /* padding-top: 20px;
+        padding-bottom: 10px; */
     
+    }
+    .menu{
+        position: absolute;
+        bottom: 105%;
+        right: 20%;
     }
   
 
@@ -277,7 +282,7 @@ padding: 0;
         padding: 0;
         margin-bottom: 0;
     }
-    header nav ol li:nth-child(n+2) {
+    header nav ol li:nth-child(n+3) {
         padding-top: 7px;
         border-top: 1px rgb(255, 255, 255) solid;
     }
@@ -304,7 +309,7 @@ padding: 0;
     header .menu a{
    color: #fff;
 
-        padding-left: 10px;
+     
         
         padding-top: 20px;
         padding-bottom: 10px;
@@ -320,7 +325,7 @@ padding: 0;
         padding: 0;
         margin-bottom: 0;
     }
-    header nav ol li:nth-child(n+2) {
+    header nav ol li:nth-child(n+3) {
         padding-top: 7px;
         border-top: 1px rgb(255, 255, 255) solid;
     }
