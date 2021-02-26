@@ -557,7 +557,7 @@ header nav ol li a:focus {
 }
 
 .social a {
-    color: #fff;
+    color: rgba(255, 255, 255, 0);
     font-size: 15px;
 }
 
@@ -942,7 +942,7 @@ section {
 
 }
 .service:hover,
-.service:focus {
+.service:focus{
     color: rgb(0, 0, 0);
     fill:rgb(255, 255, 255)
 }
@@ -1941,7 +1941,9 @@ footer .getintouch p {
     color: #37dbd3;
 }
 
-.service:hover {
+.service:hover,
+.service:focus
+ {
     background-color: #37dbd3 !important;
 }
 

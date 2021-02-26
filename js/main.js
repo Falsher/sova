@@ -147,27 +147,27 @@ if (owlcar.length) {
 
      if ($('.hero').length) {
       $(document).on("scroll", onScroll);
-      $('nav ul li a, .slider-content .site-btn, .about .site-btn').on('click', function (e) {
-          e.preventDefault();
-          $(document).off("scroll");
+      // $('nav ul li a, .slider-content .site-btn, .about .site-btn').on('click', function (e) {
+      //     e.preventDefault();
+      //     $(document).off("scroll");
           
-          $('a').each(function () {
-              $(this).removeClass('active');
-          });
+      //     $('a').each(function () {
+      //         $(this).removeClass('active');
+      //     });
               
-          $(this).addClass('active');
+      //     $(this).addClass('active');
         
-          var target = this.hash,
-          menu = target;
-          target = $(target);
-          $('html, body').stop().animate({
-              'scrollTop': target.offset().top
+      //     var target = this.hash,
+      //     menu = target;
+      //     target = $(target);
+      //     $('html, body').stop().animate({
+      //         'scrollTop': target.offset().top
               
-          }, 500, 'swing', function () {
-              window.location.hash = target.selector;
-              $(document).on("scroll", onScroll);
-          });
-      });
+      //     }, 500, 'swing', function () {
+      //         window.location.hash = target.selector;
+      //         $(document).on("scroll", onScroll);
+      //     });
+      // });
   }
 
   function onScroll(event){
@@ -334,7 +334,7 @@ var $container = $('.masonry');
 
 
 
-
+$('.service').click(function(){ console.log('click!'); });
 
 }); // document read end 
 
