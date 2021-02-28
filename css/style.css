@@ -1744,7 +1744,8 @@ footer {
     position: fixed;
     background: #37dbd3;
     /* border-top: solid 1px #212121; */
-    padding: 70px 0;
+   padding-top: 70px;
+ 
     bottom: 0;
     width: 100%;
 }
@@ -1793,8 +1794,11 @@ footer .getintouch .title {
 }
 
 footer .getintouch {
-    text-align: right;
+    text-align: center;
+    padding-top:30px ;
+      padding-bottom: 20px;
 }
+
 
 footer .getintouch p {
     font-size: 13px;
@@ -2192,4 +2196,7 @@ footer .getintouch p {
     width: 50px;
    
     fill: rgb(255, 255, 255);
+}
+.numberTwo{
+    margin-top: 15px;
 }
