@@ -277,7 +277,6 @@ padding: 0;
     }
   
 
-  
     header nav ol {
         padding: 0;
         margin-bottom: 0;
@@ -1385,6 +1384,7 @@ section {
 
 .section-title.center {
     text-align: center;
+   
 }
 
 .section-title.center:before {
@@ -1396,8 +1396,10 @@ section {
     color: #fff;
 }
 
-.imagebg span {
+.imagebg  {
+
     color: rgba(255, 255, 255, 0.6);
+    background-image: url( ../img/clin.jpg);
 }
 
 .newsletter .emailput {
@@ -2199,4 +2201,7 @@ footer .getintouch p {
 }
 .numberTwo{
     margin-top: 15px;
+}
+.center .title{
+     line-height: 45px;
 }
