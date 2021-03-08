@@ -847,10 +847,12 @@ header nav ol li a:focus {
 
 .section-title {
     padding-top: 30px;
+ 
     position: relative;
 }
 
 .section-title .title {
+  
     font-size: 40px;
     font-weight: 700;
     line-height: 24px;
@@ -910,6 +912,7 @@ section {
 }
 
 .about .text p {
+   margin-top: 30px;
     padding-right: 45px;
 }
 
@@ -926,6 +929,7 @@ section {
 }
 
 .service {
+    display: block;
     background: #f3f3f3;
     padding: 30px;
     border-radius: 12px;
@@ -935,8 +939,7 @@ section {
     -o-border-radius: 12px;
     margin-top: 30px;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-
+text-align: center;
 
 }
 .service{
@@ -1401,7 +1404,12 @@ section {
     color: rgba(255, 255, 255, 0.6);
     background-image: url( ../img/clin.jpg);
 }
-
+.imagebgrest  {
+margin-top: 80px;
+  background-color: #2dc9c1;
+  color: #fff;
+   
+}
 .newsletter .emailput {
     width: 100%;
     padding: 21px;
@@ -2204,4 +2212,9 @@ footer .getintouch p {
 }
 .center .title{
      line-height: 45px;
+}
+
+.our-service{
+
+    background-color: #2dc9c1;
 }

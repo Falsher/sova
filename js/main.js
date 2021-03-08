@@ -371,6 +371,8 @@ $('.service').click(function(){ console.log('click!'); });
     input.focus();
     setCursorPosition(3, input);
   });
+
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
 }); // document read end 
 
 
