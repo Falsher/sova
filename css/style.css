@@ -912,7 +912,7 @@ section {
 }
 
 .about .text p {
-   margin-top: 30px;
+  
     padding-right: 45px;
 }
 
@@ -1403,6 +1403,11 @@ text-align: center;
 
     color: rgba(255, 255, 255, 0.6);
     background-image: url( ../img/clin.jpg);
+}
+.imagebgg  {
+
+    color: rgb(255, 255, 255);
+     background-color: #37dbd3;
 }
 .imagebgrest  {
 margin-top: 80px;
@@ -2217,4 +2222,18 @@ footer .getintouch p {
 .our-service{
 
     background-color: #2dc9c1;
+}
+.bottom{
+    margin-top:80px;
+    
+}
+.bottom .container .section-title .title{
+   font-size: 40px;
+    
+}
+@media screen and (max-width: 1024px){
+    
+}
+.top_35{
+    margin-bottom: 30px;
 }
