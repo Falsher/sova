@@ -41,7 +41,9 @@ body {
     font-family: 'Poppins', sans-serif;
     padding-bottom: 206px;
 }
-
+a {
+    text-decoration: none;
+}
 p {
     font-size: 16px;
     line-height: 30px;
@@ -946,12 +948,13 @@ text-align: center;
   fill:#37dbd3;
   margin-left: auto;
   margin-right: auto;
-
+color:rgb(0, 0, 0)
 }
 .service:hover,
 .service:focus{
     color: rgb(0, 0, 0);
-    fill:rgb(255, 255, 255)
+    fill:rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 
@@ -2236,4 +2239,7 @@ footer .getintouch p {
 }
 .top_35{
     margin-bottom: 30px;
+}
+a{
+    text-decoration: none;
 }
