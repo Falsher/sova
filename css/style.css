@@ -8,7 +8,7 @@
 
 
 /**
-    Cenky  - Portfolio Template 
+    Cenky  - Portfolio Template
     Author : Soonlabs
     Copyright 2019
 
@@ -22,7 +22,7 @@
     4. Portfolio Section
     5. News Page
     6. Contact Page
-    6. Color 
+    6. Color
     7. Responsive
 */
 
@@ -264,20 +264,25 @@ padding: 0;
         letter-spacing: 2px;
     }
     header .menu{
-   
+
    color: #fff;
-      
+
         display: inline-flex;
         /* padding-top: 20px;
         padding-bottom: 10px; */
-    
+
     }
     .menu{
         position: absolute;
         bottom: 105%;
-        right: 20%;
+        right: 25%;
     }
-  
+    .menu1{
+        position: absolute;
+        bottom: 105%;
+        right: 15%;
+    }
+
 
     header nav ol {
         padding: 0;
@@ -310,18 +315,18 @@ padding: 0;
     header .menu a{
    color: #fff;
 
-     
-        
+
+
         padding-top: 20px;
         padding-bottom: 10px;
-    
+
     }
     header .bord a{
-    
+
       padding-right: 10px;
         border-right: 1px rgb(255, 255, 255) solid;
     }
-  
+
     header nav ol {
         padding: 0;
         margin-bottom: 0;
@@ -330,7 +335,7 @@ padding: 0;
         padding-top: 7px;
         border-top: 1px rgb(255, 255, 255) solid;
     }
- 
+
 }
 header nav ol li {
     float: left;
@@ -353,7 +358,7 @@ header nav ol li a span {
     transition: transform 0.2s;
     transform-origin: 100% 0%;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
+
 }
 
 header nav ol li:hover a span {
@@ -694,7 +699,7 @@ header nav ol li a:focus {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
 }
 
 .site-btn:hover,
@@ -849,12 +854,12 @@ header nav ol li a:focus {
 
 .section-title {
     padding-top: 30px;
- 
+
     position: relative;
 }
 
 .section-title .title {
-  
+
     font-size: 40px;
     font-weight: 700;
     line-height: 24px;
@@ -914,7 +919,7 @@ section {
 }
 
 .about .text p {
-  
+
     padding-right: 45px;
 }
 
@@ -993,8 +998,8 @@ color:rgb(0, 0, 0)
 .testimonials .item figure img {
     max-width: 200px;
     margin: 0 auto;
-    
-  
+
+
 }
 
 .testimonials .item .name {
@@ -1268,7 +1273,7 @@ color:rgb(0, 0, 0)
     visibility: hidden;
     opacity: 0;
     border-radius: 8px;
-    
+
 }
 
 .grid-item:hover .portfolio-item:after {
@@ -1390,7 +1395,7 @@ color:rgb(0, 0, 0)
 
 .section-title.center {
     text-align: center;
-   
+
 }
 
 .section-title.center:before {
@@ -1416,7 +1421,7 @@ color:rgb(0, 0, 0)
 margin-top: 80px;
   background-color: #2dc9c1;
   color: #fff;
-   
+
 }
 .newsletter .emailput {
     width: 100%;
@@ -1763,7 +1768,7 @@ footer {
     background: #37dbd3;
     /* border-top: solid 1px #212121; */
    padding-top: 70px;
- 
+
     bottom: 0;
     width: 100%;
 }
@@ -1788,9 +1793,9 @@ footer .copyright img {
 }
 
 .ftr-social .social a {
-   
+
     padding: 12px;
-  
+
     display: inline-block;
 
     margin-right: 10px;
@@ -1798,7 +1803,7 @@ footer .copyright img {
 }
 
 .ftr-social .social a:hover {
-  
+
     transform: rotate(360deg);
     transition: all ease 0.3s;
     -webkit-transition: all ease 0.3s;
@@ -2212,7 +2217,7 @@ footer .getintouch p {
 .insta::before{
     content: url(../img/2.svg);
     width: 50px;
-   
+
     fill: rgb(255, 255, 255);
 }
 .numberTwo{
@@ -2228,14 +2233,14 @@ footer .getintouch p {
 }
 .bottom{
     margin-top:80px;
-    
+
 }
 .bottom .container .section-title .title{
    font-size: 40px;
-    
+
 }
 @media screen and (max-width: 1024px){
-    
+
 }
 .top_35{
     margin-bottom: 30px;
