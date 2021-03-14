@@ -370,6 +370,21 @@ padding: 0;
     }
 
 }
+@media screen and (min-width:1041px){
+    .menu{
+        position:static;
+
+    }
+    .menu2{
+        position: static;
+
+    }
+    .menu1{
+        position: static;
+
+    }
+}
+
 header nav ol li {
     float: left;
     margin-left: 30px;
