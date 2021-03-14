@@ -2248,3 +2248,8 @@ footer .getintouch p {
 a{
     text-decoration: none;
 }
+
+
+ol.open {
+visibility: hidden;
+}
