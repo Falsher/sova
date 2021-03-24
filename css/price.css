@@ -1,0 +1,60 @@
+.sect {
+width:1200px;
+margin-right: auto;
+margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.section-titl {
+
+  position: sticky;
+  top:80px;
+
+  margin: 0;
+  padding: 16px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.section-text {
+
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.section-tex {
+  margin-top: 80px;
+
+}
+.sect:nth-child(1) .section-titl {
+  color: rgb(0, 0, 0);
+
+}
+
+.sect:nth-child(2) .section-titl{
+  color: rgb(0, 0, 0);
+}
+
+.sect:nth-child(3) .section-titl {
+  color: rgb(0, 0, 0);
+
+}
+
+.sect:nth-child(4) .section-titl {
+  color: rgb(0, 0, 0);
+
+}
+footer{
+padding-top: 0;
+}
+body{
+  padding-bottom: 150px;
+}
+.row{
+  padding-top: 15px;
+}
+footer .getintouch{
+  padding-top: 15px;
+}
