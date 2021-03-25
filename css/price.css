@@ -1,9 +1,97 @@
-.sect {
-width:1200px;
-margin-right: auto;
-margin-left: auto;
-  margin-bottom: 20px;
+@media screen and (max-width:479px){
+  .sect{
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+.section-tex{
+  margin-top: 70px;
 }
+footer .getintouch{
+  padding-top: 0px;
+}
+section{
+  padding: 0px;
+}
+footer{
+  position: static;
+}
+}
+@media screen and (min-width:480px){
+  .sect{
+
+    width: 480px;
+  }
+  .section-tex{
+    margin-top: 80px;
+  }
+  footer{
+    padding: 0px;
+  }
+  footer .getintouch{
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  footer{
+    position: static;
+  }
+}
+
+@media screen and (min-width:768px){
+  .sect{
+
+    width: 768px;
+  }
+  .section-tex {
+    margin-top: 80px;
+
+  }
+  footer{
+    padding: 0px;
+  }
+  footer .getintouch{
+    padding-top: 15px;
+  }
+  footer{
+    position: static;
+  }
+  .contact-info{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .sect {
+    width:1200px;
+
+    }
+    .th-right{
+      display: block;
+      margin-left: 200px;
+
+    }
+    thead tr th{
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .section-tex {
+      margin-top: 80px;
+
+    }
+    footer .getintouch{
+      padding-top: 15px;
+    }
+    footer{
+      position: static;
+    }
+}
+.sect {
+
+  margin-right: auto;
+  margin-left: auto;
+    margin-bottom: 20px;
+  }
 
 .section-titl {
 
@@ -24,10 +112,7 @@ margin-left: auto;
   font-size: 18px;
   margin-bottom: 0;
 }
-.section-tex {
-  margin-top: 80px;
 
-}
 .sect:nth-child(1) .section-titl {
   color: rgb(0, 0, 0);
 
@@ -50,11 +135,22 @@ footer{
 padding-top: 0;
 }
 body{
-  padding-bottom: 150px;
+  padding-bottom: 0px;
 }
 .row{
   padding-top: 15px;
 }
-footer .getintouch{
-  padding-top: 15px;
+
+.thead-inverse th {
+  text-align: center;
+  font-size: 20px;
+  color:rgb(0, 0, 0);
+  background-color: #37dbd3;
+}
+.thead-inverse{
+  background-color: #37dbd3;
+}
+
+.table thead th{
+  border-bottom: 0px;
 }
