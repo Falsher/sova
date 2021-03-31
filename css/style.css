@@ -48,7 +48,9 @@ p {
     font-size: 16px;
     line-height: 30px;
 }
-
+ul{
+    list-style-type: none;
+}
 button {
     font-family: 'Poppins', sans-serif;
     border: 0;
@@ -2120,9 +2122,9 @@ footer .getintouch p {
         font-size: 70px;
         line-height: 90px;
     }
-    .about .text {
-        margin-bottom: 90px;
-    }
+    /* .about .text {
+        /* margin-bottom: 90px; */
+    /* } */
     .counter-value {
         font-size: 30px;
     }
@@ -2304,6 +2306,15 @@ ol.open {
 visibility: hidden;
 }
 
-
-
+@media screen and(min-width:768px){
+.implant{
+    margin-top: 100px;
+    text-align: center;
+}
+}
+.ipmlant-left{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
 
