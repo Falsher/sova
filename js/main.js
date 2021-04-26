@@ -1,9 +1,4 @@
-//PRELOADER
-$(window).on('load', function () {
-  $('body').imagesLoaded(function () {
-    $('#preloader').delay(300).addClass('loaded');
-  });
-});
+
 
 $(document).ready(function () {
   //TYPED JS
@@ -145,27 +140,7 @@ $(document).ready(function () {
 
   if ($('.hero').length) {
     $(document).on('scroll', onScroll);
-    // $('nav ul li a, .slider-content .site-btn, .about .site-btn').on('click', function (e) {
-    //     e.preventDefault();
-    //     $(document).off("scroll");
 
-    //     $('a').each(function () {
-    //         $(this).removeClass('active');
-    //     });
-
-    //     $(this).addClass('active');
-
-    //     var target = this.hash,
-    //     menu = target;
-    //     target = $(target);
-    //     $('html, body').stop().animate({
-    //         'scrollTop': target.offset().top
-
-    //     }, 500, 'swing', function () {
-    //         window.location.hash = target.selector;
-    //         $(document).on("scroll", onScroll);
-    //     });
-    // });
   }
 
   function onScroll(event) {
@@ -184,14 +159,25 @@ $(document).ready(function () {
 
 
 
-  $('.nav-icon, nav ul li a').on('click', function () {
-    $('header').toggleClass('open');
-  });
 
 
-  // $('body').on('click', function () {
-  //   $('ol').toggleClass('open');
-  // });
+// HEADER OPEN MENU
+$('.nav-icon, nav ol li a').on('click', function () {
+  $('header').toggleClass('open');
+
+});
+
+  $('.wrapper').on('click', function (){
+const headerOpen = document.querySelector('header')
+
+if(headerOpen.classList.contains('open')){
+  $('header').removeClass('open')
+}
+});
+
+
+
+
 
 
   //NAVBAR SHOW - HIDE
@@ -206,28 +192,8 @@ $(document).ready(function () {
     }
   });
 
-  // MAGNIFIC POPUP FOR PORTFOLIO PAGE
-  function magnific() {
-    if ($('.lightbox-icon, .lightbox .image').length) {
-      $('.lightbox-icon, .lightbox .image').magnificPopup({
-        type: 'image',
-        gallery: { enabled: true },
-        zoom: { enabled: true, duration: 300 },
-      });
-    }
+  // // MAGNIFIC POPUP FOR PORTFOLIO PAGE
 
-    // LIGHTBOX VIDEO
-    $('.video-icon').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false,
-    });
-  }
-
-  magnific();
 
   // SCROLL ANIMATION
   new WOW({ offset: 200, mobile: false }).init();
@@ -242,134 +208,10 @@ $(document).ready(function () {
     speed: 30000,
   });
 
-  //PORTFOLIO JS
-  var $container = $('.masonry');
-  $container.isotope({
-    itemSelector: '.grid-item, .lightbox-gallery .msnry',
-    gutter: 0,
-    transitionDuration: '0.5s',
-    columnWidth: '.grid-item',
-  });
-  $('.portfolio_filter ul li a').on('click', function () {
-    $('.portfolio_filter ul li a').removeClass('select-cat');
-    $(this).addClass('select-cat');
-    var selector = $(this).attr('data-filter');
-    $('.masonry').isotope({
-      filter: selector,
-      animationOptions: {
-        duration: 750,
-        easing: 'linear',
-        queue: false,
-      },
-    });
-    return false;
-  });
-
-  $('.filter-icon').on('click', function () {
-    $('.portfolio_filter').addClass('show');
-  });
-
-  $('.portfolio_filter').on('click', function (event) {
-    if (!$(event.target).is('.portfolio_filter ul li a')) {
-      $('.portfolio_filter').removeClass('show');
-      return false;
-    }
-  });
-
-  // Infinite Scroll
-  var curPage = 1;
-  var pagesNum = $('#pagination-selector').find('li a:last').text(); // Number of pages
-
-  $container.infinitescroll(
-    {
-      itemSelector: '.grid-item',
-      nextSelector: '.portfolio-pagination li a',
-      navSelector: '#pagination-selector',
-      extraScrollPx: 0,
-      bufferPx: 0,
-      maxPage: 6,
-      loading: {
-        finishedMsg: 'No more works',
-        msgText: '<div class="loader"><span></span></div>',
-        speed: 'slow',
-        selector: '.load-more',
-      },
-    },
-    // trigger Masonry as a callback
-    function (newElements) {
-      var $newElems = $(newElements);
-      $newElems.imagesLoaded(function () {
-        // Append masonry
-        $newElems.animate({ opacity: 1 });
-        $container.isotope('appended', $newElems, true);
-      });
-      // Check last page
-      curPage++;
-      if (curPage == pagesNum) {
-        $('.load-more button').remove();
-      }
-      $('.load-more').find('button').css('visibility', 'visible');
-    },
-  );
-
-  $container.infinitescroll('unbind');
-  // jQuery
-  $container.on('append.infinitescroll', function (event, response, path, items) {
-    console.log('Loaded: ' + path);
-  });
-
-  $('.load-more button').on('click', function () {
-    setTimeout(function () {
-      magnific();
-    }, 1000);
-    $container.infinitescroll('retrieve');
-    $('.load-more').find('button').css('visibility', 'hidden');
-    return false;
-  });
-
-  $(window).bind('pageshow', function (event) {
-    if (event.originalEvent.persisted) {
-      window.location.reload();
-    }
-  });
-
-  $('.service').click(function () {
-    console.log('click!');
-  });
-
-  function setCursorPosition(pos, e) {
-    e.focus();
-    if (e.setSelectionRange) e.setSelectionRange(pos, pos);
-    else if (e.createTextRange) {
-      var range = e.createTextRange();
-      range.collapse(true);
-      range.moveEnd('character', pos);
-      range.moveStart('character', pos);
-      range.select();
-    }
-  }
-
-  function mask(e) {
-    //console.log('mask',e);
-    var matrix = this.placeholder, // .defaultValue
-      i = 0,
-      def = matrix.replace(/\D/g, ''),
-      val = this.value.replace(/\D/g, '');
-    def.length >= val.length && (val = def);
-    matrix = matrix.replace(/[_\d]/g, function (a) {
-      return val.charAt(i++) || '_';
-    });
-    this.value = matrix;
-    i = matrix.lastIndexOf(val.substr(-1));
-    i < matrix.length && matrix != this.placeholder ? i++ : (i = matrix.indexOf('_'));
-    setCursorPosition(i, this);
-  }
-  window.addEventListener('DOMContentLoaded', function () {
-    var input = document.querySelector('#online_phone');
-    input.addEventListener('input', mask, false);
-    input.focus();
-    setCursorPosition(3, input);
-  });
 
   $('html, body').animate({ scrollTop: 0 }, 'slow');
 }); // document read end
+
+
+
+
