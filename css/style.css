@@ -372,6 +372,10 @@ padding: 0;
 
 }
 @media screen and (min-width:1041px){
+    header{
+        background:#37dbd3 ;
+        letter-spacing: 2px;
+    }
     .menu{
         position:static;
 
