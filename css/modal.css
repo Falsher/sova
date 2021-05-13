@@ -1,0 +1,52 @@
+@media screen and (min-width:780px) {
+  .modal-window{
+    width: 500px;
+    height: 200px;
+  }
+
+.modal-logo{
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 45px;
+}
+.modal-text{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 25px;
+color: black;
+}
+.modal-textTwo{
+
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 25px;
+  color: black;
+}
+}
+.modal-window{
+  position: fixed;
+  z-index: 99;
+  top: 75%;
+  left: 0;
+  transform: translateX(-110%);
+
+  background-color: #37dbd3;
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+}
+.shadow{
+  display: inline-block;
+  box-shadow: -4px 1px 49px 11px #c8c8c8;
+}
+.overlay {
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 500ms ease;
+}
+.close{
+  display: none;
+}

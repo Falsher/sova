@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   //TYPED JS
   if ($('.element').length) {
@@ -140,7 +138,6 @@ $(document).ready(function () {
 
   if ($('.hero').length) {
     $(document).on('scroll', onScroll);
-
   }
 
   function onScroll(event) {
@@ -157,28 +154,18 @@ $(document).ready(function () {
     }
   }
 
+  // HEADER OPEN MENU
+  $('.nav-icon, nav ol li a').on('click', function () {
+    $('header').toggleClass('open');
+  });
 
+  $('.wrapper').on('click', function () {
+    const headerOpen = document.querySelector('header');
 
-
-
-// HEADER OPEN MENU
-$('.nav-icon, nav ol li a').on('click', function () {
-  $('header').toggleClass('open');
-
-});
-
-  $('.wrapper').on('click', function (){
-const headerOpen = document.querySelector('header')
-
-if(headerOpen.classList.contains('open')){
-  $('header').removeClass('open')
-}
-});
-
-
-
-
-
+    if (headerOpen.classList.contains('open')) {
+      $('header').removeClass('open');
+    }
+  });
 
   //NAVBAR SHOW - HIDE
   $(window).scroll(function () {
@@ -194,7 +181,6 @@ if(headerOpen.classList.contains('open')){
 
   // // MAGNIFIC POPUP FOR PORTFOLIO PAGE
 
-
   // SCROLL ANIMATION
   new WOW({ offset: 200, mobile: false }).init();
 
@@ -208,10 +194,24 @@ if(headerOpen.classList.contains('open')){
     speed: 30000,
   });
 
+  // Modal window
+  const openWindow = document.querySelector('#window');
+  const overlay = document.querySelector('.modal-window');
+  window.onload = onPageLoad;
+
+  function onPageLoad() {
+    overlay.classList.add('overlay');
+  }
+
+  const starVisible = setTimeout(() => {
+    visible();
+  }, 7000);
+
+  const visible = () => {
+    openWindow.classList.add('close');
+  };
+
+  // ---------------
 
   $('html, body').animate({ scrollTop: 0 }, 'slow');
 }); // document read end
-
-
-
-

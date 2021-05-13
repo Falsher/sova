@@ -1,541 +1,533 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <title>SOVA DENT</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Cтоматологическая клиника SovaDent">
-    <meta name="keywords" content="onepage, portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Cтоматологическая клиника SovaDent" />
+    <meta name="keywords" content="onepage, portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Stylesheets -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PE8V7K9GPC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE8V7K9GPC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  gtag('config', 'G-PE8V7K9GPC');
-</script>
-
-
+      gtag('config', 'G-PE8V7K9GPC');
+    </script>
 
     <link rel="stylesheet" type="text/css" href="../font/stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
-
+    <link rel="stylesheet" type="text/css" href="../css/modal.css" />
 
     <!-- Font icons -->
     <link rel="stylesheet" href="../icon-fonts/fontawesome-5.0.6/css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="../icon-fonts/flat-icon/flaticon.css" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <!-- HEADER
 ==================================================-->
     <header>
-        <!-- Logo -->
-        <a href="./index.html" class="logo">
-            <img src="../img/logo3.png" alt="">
-        </a>
-        <div class="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- Navigation -->
-        <nav>
-            <ol>
+      <!-- Logo -->
+      <a href="./index.html" class="logo">
+        <img src="../img/logo3.png" alt="" />
+      </a>
+      <div class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Navigation -->
+      <nav>
+        <ol>
+          <li class="menu"><a href="../index.html">UA</a></li>
+          <li class="menu1"><a href=".././indexen/index.html">EN</a></li>
+          <!-- <li  class="menu"><a href="#eng"><span data-hover="EN">EN</span></a></li> -->
 
+          <li>
+            <a href="#hero"><span data-hover="Начало">Начало</span></a>
+          </li>
+          <li>
+            <a href="#about"><span data-hover="О нас">О нас</span></a>
+          </li>
+          <li>
+            <a href="#services"><span data-hover="Услуги">Услуги</span></a>
+          </li>
+          <li>
+            <a href="#testimonials"><span data-hover="Сотрудники">Сотрудники</span></a>
+          </li>
+          <!-- <li><a href="#portfolio"><span data-hover="Портфолио">Портфолио</span></a></li> -->
 
-                    <li  class="menu"><a href="../index.html">UA</a></li>
-             <li  class="menu1"><a  href=".././indexen/index.html">EN</a></li>
-                    <!-- <li  class="menu"><a href="#eng"><span data-hover="EN">EN</span></a></li> -->
-
-                <li><a href="#hero"><span data-hover="Начало">Начало</span></a></li>
-                <li ><a href="#about"><span data-hover="О нас">О нас</span></a></li>
-                <li><a href="#services"><span data-hover="Услуги">Услуги</span></a></li>
-                <li><a href="#testimonials"><span data-hover="Сотрудники">Сотрудники</span></a></li>
-                <!-- <li><a href="#portfolio"><span data-hover="Портфолио">Портфолио</span></a></li> -->
-
-                <li><a href="#contact"><span data-hover="Контакты">Контакты</span></a></li>
-            </ol>
-        </nav>
+          <li>
+            <a href="#contact"><span data-hover="Контакты">Контакты</span></a>
+          </li>
+        </ol>
+      </nav>
     </header>
 
     <div class="wrapper">
-
-        <!-- SLIDER
+      <!-- SLIDER
 ==================================================-->
-        <div class="hero" id="hero">
-            <!-- Swiper -->
-            <div class="swiper-container carousel">
-                <div class="swiper-wrapper">
-                    <!-- a slide -->
-                    <div class="swiper-slide" style="background-image:url(../img/slider-1.jpg)">
-                        <div class="slider-content">
-                            <!-- <span>Терапия</span> -->
-                            <h1>Терапия</h1>
-                            <a href="tel:+380954792323" class="site-btn top_30">ПОЗВОНИТЬ</a>
-                        </div>
-                    </div>
-                    <!-- a slide -->
-                    <div class="swiper-slide" style="background-image:url(../img/slider-3.jpg)">
-                        <div class="slider-content">
-                            <!-- <span>Пародонтология</span> -->
-                            <h1>Протезирование</h1>
-                            <a href="tel:+380954792323" class="site-btn top_30">ПОЗВОНИТЬ</a>
-                        </div>
-                    </div>
-                    <!-- a slide -->
-                    <div class="swiper-slide" style="background-image:url(../img/slider-4.jpg)">
-                        <div class="slider-content">
-                            <!-- <span>Хирургическая стоматология</span> -->
-                            <h1>Хирургия</h1>
-                            <a href="tel:+380954792323" class="site-btn top_30">ПОЗВОНИТЬ</a>
-                        </div>
-                    </div>
-                    <!-- a slide -->
-                    <div class="swiper-slide" style="background-image:url(../img/slider-2.jpg)">
-                        <div class="slider-content">
-                            <!-- <span>Эстетическая реставрация</span> -->
-                            <h1>Реставрация</h1>
-                            <a href="tel:+380954792323" class="site-btn top_30">ПОЗВОНИТЬ</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+      <div class="hero" id="hero">
+        <!-- Swiper -->
+        <div class="swiper-container carousel">
+          <div class="swiper-wrapper">
+            <!-- a slide -->
+            <div class="swiper-slide" style="background-image: url(../img/slider-1.jpg)">
+              <div class="slider-content">
+                <!-- <span>Терапия</span> -->
+                <h1>Терапия</h1>
+                <a href="tel:+380954792323" class="site-btn top_30">ПОЗВОНИТЬ</a>
+              </div>
             </div>
-
-            <div class="social">
-                <!-- <a href="#"><i class="fab fa-facebook" ></i>  </a> -->
-                 <a class="facebook" href="https://www.facebook.com/profile.php?id=100044494932644">  </a>
-                <!-- <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i>  </a> -->
-                <a class="insta" href="https://www.instagram.com/sova_dent/">  </a>
-                 <!-- <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a> -->
-                <!-- <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a>
-                <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a> -->
+            <!-- a slide -->
+            <div class="swiper-slide" style="background-image: url(../img/slider-3.jpg)">
+              <div class="slider-content">
+                <!-- <span>Пародонтология</span> -->
+                <h1>Протезирование</h1>
+                <a href="tel:+380954792323" class="site-btn top_30">ПОЗВОНИТЬ</a>
+              </div>
             </div>
+            <!-- a slide -->
+            <div class="swiper-slide" style="background-image: url(../img/slider-4.jpg)">
+              <div class="slider-content">
+                <!-- <span>Хирургическая стоматология</span> -->
+                <h1>Хирургия</h1>
+                <a href="tel:+380954792323" class="site-btn top_30">ПОЗВОНИТЬ</a>
+              </div>
+            </div>
+            <!-- a slide -->
+            <div class="swiper-slide" style="background-image: url(../img/slider-2.jpg)">
+              <div class="slider-content">
+                <!-- <span>Эстетическая реставрация</span> -->
+                <h1>Реставрация</h1>
+                <a href="tel:+380954792323" class="site-btn top_30">ПОЗВОНИТЬ</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
 
-        <!-- ABOUT
+        <div class="social">
+          <!-- <a href="#"><i class="fab fa-facebook" ></i>  </a> -->
+          <a class="facebook" href="https://www.facebook.com/profile.php?id=100044494932644"> </a>
+          <!-- <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i>  </a> -->
+          <a class="insta" href="https://www.instagram.com/sova_dent/"> </a>
+          <!-- <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a> -->
+          <!-- <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a>
+                <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a> -->
+        </div>
+      </div>
+
+      <!-- ABOUT
 ==================================================-->
+      <section id="window" class="">
+        <div class="modal-window shadow">
+          <div class="text-style">
+            <h2 class="modal-logo">SovaDent</h2>
 
+            <p class="modal-text">Наша клиника будет находиться</p>
+            <p class="modal-textTwo">в отпуске с 10 по 13 июня</p>
+          </div>
+        </div>
+      </section>
 
-        <!-- SERVICES
+      <!-- SERVICES
 ==================================================-->
-        <section id="services" class="marg services graybg">
-            <div class="container wow fadeInUp">
-                <div class="section-title bottom_15 top_30">
-                    <h2 class="title">Наш сервис</h2>
-                    <!-- <span>who we are</span> -->
-                </div>
-                <!-- Services -->
-                <div class="row">
-                    <!-- a service -->
-                    <div class="col-lg-4">
-                        <a href="./restavration.html" class="service">
+      <section id="services" class="marg services graybg">
+        <div class="container wow fadeInUp">
+          <div class="section-title bottom_15 top_30">
+            <h2 class="title">Наш сервис</h2>
+            <!-- <span>who we are</span> -->
+          </div>
+          <!-- Services -->
+          <div class="row">
+            <!-- a service -->
+            <div class="col-lg-4">
+              <a href="./restavration.html" class="service">
+                <svg class="social-link" width="70">
+                  <use href="../img/sprite.svg#z-1"></use>
+                </svg>
 
-                               <svg class="social-link" width="70">
-                                    <use href="../img/sprite.svg#z-1"></use>
-                                </svg>
-
-                            <h3 class="second-title">Реставрация</h3>
-                            <p>Восстановление первоначальной формы, структуры и цвета зубов</p>
-                        </a>
-                    </div>
-                    <!-- a service -->
-                    <div class="col-lg-4">
-                        <a href="./endodontics.html" class="service">
-
-                               <svg class="social-link" width="70">
-                                    <use href="../img/sprite.svg#z-2"></use>
-                                </svg>
-
-                            <h3 class="second-title">Эндодонтия</h3>
-                            <p>Лечение корневых каналов <br> зуба
-                            </p>
-                        </a>
-                    </div>
-                    <!-- a service -->
-                    <div class="col-lg-4">
-                        <a href="./implantology.html" class="service">
-
-                               <svg class="social-link" width="70">
-                                    <use href="../img/sprite.svg#z-3"></use>
-                                </svg>
-
-                            <h3 class="second-title">Имплантология</h3>
-                            <p>- установка импланта <br>- костная пластика </p>
-                        </a>
-                    </div>
-                    <!-- a service -->
-                    <div class="col-lg-4">
-                        <a href="./surgery.html" class="service">
-
-                               <svg class="social-link" width="70">
-                                    <use href="../img/sprite.svg#z-4"></use>
-                                </svg>
-
-                            <h3 class="second-title">Хирургия</h3>
-                            <p>- атравматичное удаление зубов любой сложности</p>
-                        </a>
-                    </div>
-                    <!-- a service -->
-                    <div class="col-lg-4">
-                        <a href="./whitening.html" class="service">
-
-                               <svg class="social-link" width="70">
-                                    <use href="../img/sprite.svg#z-5"></use>
-                                </svg>
-
-                            <h3 class="second-title">Отбеливание</h3>
-                            <p>Профессиональное и домашнее отбеливание зубов</p>
-                        </a>
-                    </div>
-                    <!-- a service -->
-                    <div class="col-lg-4">
-                        <a  href="./veneer.html" class="service">
-
-                               <svg class="social-link" width="70">
-                                    <use href="../img/sprite.svg#z-6"></use>
-                                </svg>
-
-                            <h3 class="second-title">Виниры</h3>
-                            <p>- прессованная керамика <br>- композитные</p>
-                        </a>
-                    </div>
-                        <div class="col-lg-4">
-                        <a href="./hygiene.html" class="service">
-
-                               <svg class="social-link" width="100">
-                                    <use href="../img/sprite.svg#z-10"></use>
-                                </svg>
-
-                            <h3 class="second-title">Профессиональная гигиена</h3>
-                            <p>- ультразвуковой скейлинг  <br> - метод Air Flow</p>
-                        </a>
-                    </div>
-                        <div class="col-lg-4">
-                        <a  href="./prosthetics.html" class="service">
-
-                               <svg class="social-link" width="70">
-                                    <use href="../img/sprite.svg#z-8"></use>
-                                </svg>
-
-                            <h3 class="second-title">Протезирование</h3>
-                            <p>- металлокерамические коронки <br>- протезирование на имплантах</p>
-                        </a>
-                    </div>
-                        <div class="col-lg-4">
-                        <a href="./x-ray.html" class="service">
-
-                               <svg class="social-link" width="100">
-                                    <use href="../img/sprite.svg#z-12"></use>
-                                </svg>
-
-                            <h3 class="second-title">Цифровой рентген</h3>
-                            <p>- точная диагностика<br>- зниження дози опромінення</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- counter end -->
+                <h3 class="second-title">Реставрация</h3>
+                <p>Восстановление первоначальной формы, структуры и цвета зубов</p>
+              </a>
             </div>
-            <!-- container end-->
-        </section>
+            <!-- a service -->
+            <div class="col-lg-4">
+              <a href="./endodontics.html" class="service">
+                <svg class="social-link" width="70">
+                  <use href="../img/sprite.svg#z-2"></use>
+                </svg>
 
-        <!-- TESTIMONIALS
-==================================================-->
-        <section class="marg testimonial" id="testimonials">
-            <div class="container wow fadeInUp">
-                <div class="section-title bottom_15 top_30">
-                    <h2 class="title">Наши сотрудники</h2>
-                    <!-- <span>what the people saying about us</span> -->
-                </div>
-                <div class="owl-carousel owl-theme testimonials" data-autoplay="true" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2" data-items-tablet-small="1" data-margin="30">
-
-                    <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-1.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Сохань Николай Васильевич</h3>
-                                <span>Врач-стоматолог-ортопед</span>
-                                <span>Врач-стоматолог-хирург</span>
-                            </div>
-
-                        </div>
-                    </div>
-                        <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-9.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Вакула Наталья Валентиновна</h3>
-                                <span>Врач-стоматолог-терапевт</span>
-                            </div>
-
-                        </div>
-                    </div>
-                            <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-7.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Сохань Ирина Викторовна</h3>
-                                <span>Врач-стоматолог-терапевт</span>
-                            </div>
-
-                        </div>
-                    </div>
-                             <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-4.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">
-                                    Ноженко Олег Николаевич</h3>
-                                <span>Врач-стоматолог-ортопед</span>
-                            </div>
-
-                        </div>
-                    </div>
-                          <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-6.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Луханина Наталья Дмитриевна</h3>
-                                <span>Врач-стоматолог-терапевт</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-2.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Пинчукова Ольга Анатольевна</h3>
-                                <span>Врач-стоматолог-терапевт</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-10.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Сохань Мария Николаевна</h3>
-                                <span>Врач-интерн</span>
-                            </div>
-
-                        </div>
-                    </div>
-                         <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-3.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Горбатенко  Анна Игоревна</h3>
-                                <span>Администратор</span>
-                            </div>
-
-                        </div>
-                    </div>
-                        <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-8.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Свищева Ирина Анатольевна</h3>
-                                <span>Медсестра</span>
-                            </div>
-
-                        </div>
-                    </div>
-                      <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-11.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Базалей Инна Андреевна</h3>
-                                <span>Медсестра</span>
-                            </div>
-
-                        </div>
-                    </div>
-              <div class="item">
-                        <div class="outitem">
-                            <figure><img src="../img/team-5.jpg" alt=""></figure>
-                            <div class="name">
-                                <h3 class="title">Огурцова Светлана Ивановна</h3>
-                                <span>Младшая медсестра</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-
-
-                </div>
+                <h3 class="second-title">Эндодонтия</h3>
+                <p>
+                  Лечение корневых каналов <br />
+                  зуба
+                </p>
+              </a>
             </div>
-        </section>
+            <!-- a service -->
+            <div class="col-lg-4">
+              <a href="./implantology.html" class="service">
+                <svg class="social-link" width="70">
+                  <use href="../img/sprite.svg#z-3"></use>
+                </svg>
 
+                <h3 class="second-title">Имплантология</h3>
+                <p>- установка импланта <br />- костная пластика</p>
+              </a>
+            </div>
+            <!-- a service -->
+            <div class="col-lg-4">
+              <a href="./surgery.html" class="service">
+                <svg class="social-link" width="70">
+                  <use href="../img/sprite.svg#z-4"></use>
+                </svg>
 
+                <h3 class="second-title">Хирургия</h3>
+                <p>- атравматичное удаление зубов любой сложности</p>
+              </a>
+            </div>
+            <!-- a service -->
+            <div class="col-lg-4">
+              <a href="./whitening.html" class="service">
+                <svg class="social-link" width="70">
+                  <use href="../img/sprite.svg#z-5"></use>
+                </svg>
 
-        <!-- NEWSLETTER
+                <h3 class="second-title">Отбеливание</h3>
+                <p>Профессиональное и домашнее отбеливание зубов</p>
+              </a>
+            </div>
+            <!-- a service -->
+            <div class="col-lg-4">
+              <a href="./veneer.html" class="service">
+                <svg class="social-link" width="70">
+                  <use href="../img/sprite.svg#z-6"></use>
+                </svg>
+
+                <h3 class="second-title">Виниры</h3>
+                <p>- прессованная керамика <br />- композитные</p>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="./hygiene.html" class="service">
+                <svg class="social-link" width="100">
+                  <use href="../img/sprite.svg#z-10"></use>
+                </svg>
+
+                <h3 class="second-title">Профессиональная гигиена</h3>
+                <p>
+                  - ультразвуковой скейлинг <br />
+                  - метод Air Flow
+                </p>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="./prosthetics.html" class="service">
+                <svg class="social-link" width="70">
+                  <use href="../img/sprite.svg#z-8"></use>
+                </svg>
+
+                <h3 class="second-title">Протезирование</h3>
+                <p>- металлокерамические коронки <br />- протезирование на имплантах</p>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="./x-ray.html" class="service">
+                <svg class="social-link" width="100">
+                  <use href="../img/sprite.svg#z-12"></use>
+                </svg>
+
+                <h3 class="second-title">Цифровой рентген</h3>
+                <p>- точная диагностика<br />- зниження дози опромінення</p>
+              </a>
+            </div>
+          </div>
+
+          <!-- counter end -->
+        </div>
+        <!-- container end-->
+      </section>
+
+      <!-- TESTIMONIALS
+==================================================-->
+      <section class="marg testimonial" id="testimonials">
+        <div class="container wow fadeInUp">
+          <div class="section-title bottom_15 top_30">
+            <h2 class="title">Наши сотрудники</h2>
+            <!-- <span>what the people saying about us</span> -->
+          </div>
+          <div
+            class="owl-carousel owl-theme testimonials"
+            data-autoplay="true"
+            data-items-desktop="3"
+            data-items-desktop-small="3"
+            data-items-tablet="2"
+            data-items-tablet-small="1"
+            data-margin="30"
+          >
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-1.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Сохань Николай Васильевич</h3>
+                  <span>Врач-стоматолог-ортопед</span>
+                  <span>Врач-стоматолог-хирург</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-9.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Вакула Наталья Валентиновна</h3>
+                  <span>Врач-стоматолог-терапевт</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-7.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Сохань Ирина Викторовна</h3>
+                  <span>Врач-стоматолог-терапевт</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-4.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Ноженко Олег Николаевич</h3>
+                  <span>Врач-стоматолог-ортопед</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-6.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Луханина Наталья Дмитриевна</h3>
+                  <span>Врач-стоматолог-терапевт</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-2.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Пинчукова Ольга Анатольевна</h3>
+                  <span>Врач-стоматолог-терапевт</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-10.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Сохань Мария Николаевна</h3>
+                  <span>Врач-интерн</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-3.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Горбатенко Анна Игоревна</h3>
+                  <span>Администратор</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-8.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Свищева Ирина Анатольевна</h3>
+                  <span>Медсестра</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-11.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Базалей Инна Андреевна</h3>
+                  <span>Медсестра</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="outitem">
+                <figure><img src="../img/team-5.jpg" alt="" /></figure>
+                <div class="name">
+                  <h3 class="title">Огурцова Светлана Ивановна</h3>
+                  <span>Младшая медсестра</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER
 ================================================== -->
-        <section class="marg newsletter imagebg text-center">
-            <div class="container">
-                <div class="section-title center bottom_15 top_30 bottom_45">
-                    <h2 class="title">Контроль стерильности</h2>
+      <section class="marg newsletter imagebg text-center">
+        <div class="container">
+          <div class="section-title center bottom_15 top_30 bottom_45">
+            <h2 class="title">Контроль стерильности</h2>
+          </div>
+        </div>
+      </section>
 
-                </div>
-
-
-
+      <section id="about" class="marg about">
+        <div class="container wow fadeInUp">
+          <div class="row">
+            <!-- Left Side -->
+            <div class="col-lg-7 text box-animation">
+              <div class="section-title bottom_15 top_30">
+                <h2 class="title">О нас</h2>
+              </div>
+              <p>
+                Стоматологический кабинет «СоВа» в Харькове - это место, где процедура лечения зубов максимально безболезненна и качественна, цены
+                доступные, а сервис всегда на высоте. Коллектив нашей стоматологии делает все возможное, чтобы придя к нам однажды - Вы и члены Вашей
+                семьи нашли для себя лучшего и проверенного стоматолога на долгие годы. Мы стремимся оправдать оказанное доверие и сделать пребывание
+                в наших стенах приятным.
+              </p>
             </div>
-        </section>
-
-
-     <section id="about" class="marg about">
-            <div class="container wow fadeInUp">
-                <div class="row">
-                    <!-- Left Side -->
-                    <div class="col-lg-7 text box-animation">
-                        <div class="section-title bottom_15 top_30">
-                            <h2 class="title">О нас</h2>
-
-                        </div>
-                        <p>Стоматологический кабинет «СоВа» в Харькове - это место, где процедура лечения зубов максимально безболезненна и качественна, цены доступные, а сервис всегда на высоте. Коллектив нашей стоматологии делает все возможное, чтобы придя
-                            к нам однажды - Вы и члены Вашей семьи нашли для себя лучшего и проверенного стоматолога на долгие годы. Мы стремимся оправдать оказанное доверие и сделать пребывание в наших стенах приятным. </p>
-
-                    </div>
-                    <!-- Right Side -->
-                    <div class="col-lg-5 image">
-                        <figure>
-                            <img src="../img/logo3.png" alt="">
-                        </figure>
-                    </div>
-                </div>
-
+            <!-- Right Side -->
+            <div class="col-lg-5 image">
+              <figure>
+                <img src="../img/logo3.png" alt="" />
+              </figure>
             </div>
-            <!-- container end -->
-        </section>
-        <!-- CONTACT
+          </div>
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- CONTACT
 ================================================== -->
-        <section id="contact" class="marg contact graybg">
-            <div class="container wow fadeInUp">
-                <div class="section-title bottom_15 top_30 bottom_45">
-                    <h2 class="title">Наши контакты</h2>
-                    <!-- <span>get in touch</span> -->
-                </div>
-                <!-- Map -->
-                <div class="contact-map">
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.4405849387713!2d36.34825841588448!3d50.02183962603579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709d0a18f149f%3A0xed0b8e79f5bd8fe8!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQutCw0LHQuNC90LXRgiDCq1NvdmEgRGVudMK7!5e0!3m2!1sru!2sua!4v1614245429534!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+      <section id="contact" class="marg contact graybg">
+        <div class="container wow fadeInUp">
+          <div class="section-title bottom_15 top_30 bottom_45">
+            <h2 class="title">Наши контакты</h2>
+            <!-- <span>get in touch</span> -->
+          </div>
+          <!-- Map -->
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.4405849387713!2d36.34825841588448!3d50.02183962603579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709d0a18f149f%3A0xed0b8e79f5bd8fe8!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQutCw0LHQuNC90LXRgiDCq1NvdmEgRGVudMK7!5e0!3m2!1sru!2sua!4v1614245429534!5m2!1sru!2sua"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
 
-                <div class="getintouch row top_120">
-                    <!-- contact info -->
-                    <div class="col-lg-4 contact-info box-animation">
-                        <!-- info -->
-                        <div class="info">
-                            <i class="fas fa-paper-plane"></i>
-                            <a href="mailto:info@stomatclinica.com"> info@stomatclinica.com</a>
-                            <p> Email </p>
-                        </div>
-                        <!-- info -->
-                        <div class="info top_30">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p class="text">ул. Героев Труда 29<br>Харьков</p>
-                            <p> Адресс </p>
-                        </div>
-                        <!-- info -->
-                        <div class="info top_30">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+380954792323">095 479 23 23</a>
-                            <a class="numberTwo" href="tel:+380681882828">068 188 28 28</a>
-                              <a class="numberTwo" href="tel:+380573645659">057 364 56 59</a>
-                                  <a class="numberTwo" href="tel:+380577527559">057 752 75 59</a>
+          <div class="getintouch row top_120">
+            <!-- contact info -->
+            <div class="col-lg-4 contact-info box-animation">
+              <!-- info -->
+              <div class="info">
+                <i class="fas fa-paper-plane"></i>
+                <a href="mailto:info@stomatclinica.com"> info@stomatclinica.com</a>
+                <p>Email</p>
+              </div>
+              <!-- info -->
+              <div class="info top_30">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="text">ул. Героев Труда 29<br />Харьков</p>
+                <p>Адресс</p>
+              </div>
+              <!-- info -->
+              <div class="info top_30">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+380954792323">095 479 23 23</a>
+                <a class="numberTwo" href="tel:+380681882828">068 188 28 28</a>
+                <a class="numberTwo" href="tel:+380573645659">057 364 56 59</a>
+                <a class="numberTwo" href="tel:+380577527559">057 752 75 59</a>
 
-                            <p> Телефон </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 contact-form box-animation">
-                         <h3>Оставьте заявку и мы вас проконсультируем</h3>
-                        <!-- contact form -->
-                        <form class="contact-form">
-                            <div class="row">
-                                <!--Name-->
-                                <div class="col-md-6">
-                                    <input name="fio" class="form-inp" type="text" placeholder="Имя Фамилия"  required >
-                                </div>
-                                <!--Email-->
-                                <div class="col-md-6">
-                                          <input id="online_phone" name="phone" class="form-inp" type="tel"   value="+38(___)___-__-__"
-         pattern="\+38\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-         placeholder="+38(___)___-__-__"  required>
-                                </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <!--Message-->
-                                    <!-- <textarea placeholder="Чем можем вам помочь?" rows="7"></textarea> -->
-                                    <button id="con_submit" class="site-btn top_45 pull-right" type="submit">ЗАПИСАТЬСЯ</button>
-                                </div>
-
-                        </form>
-                    </div>
-                </div>
-
+                <p>Телефон</p>
+              </div>
             </div>
-
-
-        </section>
-
+            <div class="col-lg-8 contact-form box-animation">
+              <h3>Оставьте заявку и мы вас проконсультируем</h3>
+              <!-- contact form -->
+              <form class="contact-form">
+                <div class="row">
+                  <!--Name-->
+                  <div class="col-md-6">
+                    <input name="fio" class="form-inp" type="text" placeholder="Имя Фамилия" required />
+                  </div>
+                  <!--Email-->
+                  <div class="col-md-6">
+                    <input
+                      id="online_phone"
+                      name="phone"
+                      class="form-inp"
+                      type="tel"
+                      value="+38(___)___-__-__"
+                      pattern="\+38\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                      placeholder="+38(___)___-__-__"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <!--Message-->
+                  <!-- <textarea placeholder="Чем можем вам помочь?" rows="7"></textarea> -->
+                  <button id="con_submit" class="site-btn top_45 pull-right" type="submit">ЗАПИСАТЬСЯ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- FOOTER
 ================================================== -->
 
-<footer>
-        <div class="container">
-            <div class="row">
-                <!-- Copyright -->
-                <div class="col-lg-6 copyright">
-                    <a href="../index.html"><img src="../img/logo3.png" alt=""></a>
-                    <!-- <p>© 2019 Nebro Creative Agency.</p> -->
-                </div>
-                <!-- Social -->
-                <div class="col-lg-6 ftr-social">
-                    <div class="social">
-                       <a class="facebook" href="https://www.facebook.com/profile.php?id=100044494932644">  </a>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-lg-6 copyright">
+            <a href="../index.html"><img src="../img/logo3.png" alt="" /></a>
+            <!-- <p>© 2019 Nebro Creative Agency.</p> -->
+          </div>
+          <!-- Social -->
+          <div class="col-lg-6 ftr-social">
+            <div class="social">
+              <a class="facebook" href="https://www.facebook.com/profile.php?id=100044494932644"> </a>
 
-                <a class="insta" href="https://www.instagram.com/sova_dent/">  </a>
-
-                    </div>
-                </div>
-                <!-- Get In Touch -->
-
+              <a class="insta" href="https://www.instagram.com/sova_dent/"> </a>
             </div>
-
+          </div>
+          <!-- Get In Touch -->
         </div>
-        <div class="col-lg-12 getintouch">
-
-                    <p>Лицензия: Серия АГ №601234 от 28.04.2011 года</p>
-                </div>
+      </div>
+      <div class="col-lg-12 getintouch">
+        <p>Лицензия: Серия АГ №601234 от 28.04.2011 года</p>
+      </div>
     </footer>
 
     <!-- Javascripts -->
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
